@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    nav {
+        text-align: center;
+        width: 600px;
+        margin: 5px auto;
+        background: #f1f1f1;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12) !important
+    }
+
+    .floatfixed::after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+
+    .nav > li {
+        float: left;
+        position: relative;
+    }
+
+    .subnav {
+        text-align: left;
+        display: none;
+        position: absolute;
+        top: 100%;
+        box-shadow: 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12) !important
+    }
+
+    .subnav a {
+        min-width: 160px;
+    }
+
+    .nav a {
+        padding: 8px 16px;
+        display: inline-block;
+    }
+
+    .nav a:hover {
+        background: #ccc;
+    }
+
+    .nav > li:hover .subnav {
+        display: block;
+    }
+</style>
+<body>
+<nav class="floatfixed">
+    <ul class="nav">
+        <li><a href="#">首页</a></li>
+        <li><a href="#">作品</a></li>
+        <li>
+            <a href="#">更多</a>
+            <ul class="subnav">
+                <li><a href="#">GitHub</a></li>
+                <li><a href="#">博客</a></li>
+                <li><a href="#">知乎</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+</body>
+</html>
