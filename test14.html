@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>views</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 30px;
+            color: #666;
+        }
+
+        .clearfix:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .views {
+            margin: 10px auto;
+            width: 800px;
+            border-top: solid 1px #ccc;
+            padding-top: 50px;
+
+        }
+
+        .view {
+            width: 260px;
+            float: left;
+            margin-right: 10px;
+            margin-bottom: 30px;
+            opacity: 0.8;
+            background-color: #fff;
+            box-shadow: 0 8px 16px 2px rgba(0, 0, 0, 0.2);
+            transition: opacity .5s, box-shadow .5s;
+        }
+
+        .view:nth-child(3n) {
+            margin-right: 0;
+        }
+
+        .view .pic {
+            width: 100%;
+            vertical-align: middle;
+        }
+
+        .view .intro {
+            text-align: center;
+            line-height: 60px;
+        }
+
+        .view:hover {
+            opacity: 1;
+            box-shadow: 0 8px 16px 2px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+<h1>风景列表</h1>
+<section class="views clearfix">
+    <a href="#" class="view ">
+        <img src="http://7xpvnv.com2.z0.glb.qiniucdn.com/283a4100-10cd-4208-a3b5-4030ec03acf6" alt="风景" class="pic">
+        <p class="intro">
+            风景如画
+        </p>
+    </a>
+    <a href="#" class="view">
+        <img src="http://7xpvnv.com2.z0.glb.qiniucdn.com/283a4100-10cd-4208-a3b5-4030ec03acf6" alt="风景" class="pic">
+        <p class="intro">
+            风景如画
+        </p>
+    </a>
+    <a href="#" class="view">
+        <img src="http://7xpvnv.com2.z0.glb.qiniucdn.com/283a4100-10cd-4208-a3b5-4030ec03acf6" alt="风景" class="pic">
+        <p class="intro">
+            风景如画
+        </p>
+    </a>
+    <a href="#" class="view">
+        <img src="http://7xpvnv.com2.z0.glb.qiniucdn.com/283a4100-10cd-4208-a3b5-4030ec03acf6" alt="风景" class="pic">
+        <p class="intro">
+            风景如画
+        </p>
+    </a>
+    <a href="#" class="view">
+        <img src="http://7xpvnv.com2.z0.glb.qiniucdn.com/283a4100-10cd-4208-a3b5-4030ec03acf6" alt="风景" class="pic">
+        <p class="intro">
+            风景如画
+        </p>
+    </a>
+    <a href="#" class="view">
+        <img src="http://7xpvnv.com2.z0.glb.qiniucdn.com/283a4100-10cd-4208-a3b5-4030ec03acf6" alt="风景" class="pic">
+        <p class="intro">
+            风景如画
+        </p>
+    </a>
+</section>
+</body>
+</html>
