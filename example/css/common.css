@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font-size: 14px;
+    font-family: -apple-system, SF UI Text, Arial, PingFang SC, Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif;
+    line-height: 1.5;
+}
+
+button {
+    border: none;
+}
+
+h3 {
+    font-weight: normal;
+}
+
+.iconfont {
+    font-size: 14px;
+}
+
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.counter {
+    min-width: 10px;
+    font-size: 14px;
+    padding: 3px 6px;
+    font-weight: bold;
+    border-radius: 10px;
+    line-height: 1;
+    background-color: #F0655B;
+    color: #fff;
+}
+
+.carousel-button {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    cursor: pointer;
+}
+
+.tooltip {
+    position: absolute;
+    border-radius: 4px;
+    display: none;
+    padding: 0 8px;
+    background-color: #000;
+    text-align: center;
+    line-height: 28px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.outer {
+    height: 100px;
+    display: none;
+}
+
+.fakeimg {
+    float: right;
+    width: 150px;
+    height: 100px;
+    background: #d8d8d8;
+    margin-left: 30px;
+    border-radius: 4px;
+}
+
+.inner {
+    height: 10px;
+    width: 50%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background: #d8d8d8;
+}
+
+.outer .inner.animation {
+    animation: loading .4s alternate infinite;
+
+}
+
+.outer .inner:nth-child(3) {
+    animation-delay: .1s
+}
+
+.outer .inner:nth-of-type(4) {
+
+    animation-delay: .2s
+}
+
+.outer .inner:nth-of-type(5) {
+    animation-delay: .3s
+}
+
+@keyframes loading {
+    0% {
+        width: 50%;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
