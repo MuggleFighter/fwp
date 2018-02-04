@@ -1,6 +1,6 @@
 $(function () {
     var $window = $(window);
-    var endZone = $('.about').offset().top - $window.height() - 200;
+    var endZone = $('.about').offset().top - $window.height();
     var counter = 0;
 
 
