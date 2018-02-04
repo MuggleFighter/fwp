@@ -3,7 +3,6 @@ $(function () {
     var endZone = $('.about').offset().top - $window.height();
     var counter = 0;
 
-
     $window.on('scroll', function () {
         if ((endZone < $window.scrollTop()) && counter < 2) {
             $.ajax({
@@ -18,11 +17,16 @@ $(function () {
                     counter += 1;
                 },
                 success: function (data) {
-                    $('.outer').hide();
-                    var $article = $(data).find('article');
-                    $article.each(function () {
-                        $(this).appendTo($('.articles'))
-                    })
+                    function sleep() {
+                        $('.outer').hide();
+                        var $article = $(data).find('article');
+                        $article.each(function () {
+                            $(this).appendTo($('.articles'))
+                        })
+                    }
+
+                    setTimeout(sleep, 2000);
+
                 }
                 // error: alert('123')
             })
