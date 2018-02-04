@@ -7,8 +7,8 @@ $(function () {
     $window.on('scroll', function () {
         if ((endZone < $window.scrollTop()) && counter < 2) {
             $.ajax({
-                type: 'POST',
-                url: 'articles.html',
+                type: 'GET',
+                url: 'https://mugglefighter.github.io/fwp/example/articles.html',
                 timeout: 2000,
                 beforeSend: function () {
                     $('.outer').show();
