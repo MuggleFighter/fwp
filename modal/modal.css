@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  position: relative;
+}
+
+body {
+  background: linear-gradient(to right top, rgba(38, 50, 105, 0.78), rgba(255, 152, 0, 0.45)), url(bg.jpg) center center no-repeat;
+  background-size: cover;
+  font: 16px/1.5 sans-serif;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.nav-signin {
+  height: 48px;
+  line-height: 48px;
+}
+
+.nav-signin .iconfont {
+  float: right;
+  margin-right: 48px;
+  font-size: 24px;
+}
+
+.flip-modal {
+  display: none;
+}
+
+.flip-modal .modal.signin,
+.flip-modal .modal.signup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: #fff;
+  padding: 16px 58px 32px 58px;
+  box-shadow: 0 0 13px 3px rgba(0, 0, 0, 0.35);
+  transition: all .5s;
+  backface-visibility: hidden;
+}
+
+.flip-modal .modal {
+  transform: translate(-50%, -50%) rotateY(180deg);
+}
+
+.flip-modal .modal.active {
+  transform: translate(-50%, -50%) rotateY(0deg);
+}
+
+.flip-modal .close {
+  position: absolute;
+  right: 12px;
+  top: 4px;
+  font-weight: bold;
+}
+
+.flip-modal .tabs {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.flip-modal .tabs .tab-signin,
+.flip-modal .tabs .tab-signup {
+  display: inline-block;
+  margin-right: 24px;
+}
+
+.flip-modal .tabs .active {
+  border-bottom: 2px solid #ccc;
+}
+
+.flip-modal .err-msg {
+  margin-bottom: 12px;
+  color: #c54545;
+  font-size: 14px;
+}
+
+.flip-modal .field {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.flip-modal .field .iconfont {
+  position: absolute;
+  top: 11px;
+  left: 8px;
+  font-size: 18px;
+  line-height: 1;
+  color: #999
+}
+
+.flip-modal input[type=text],
+.flip-modal input[type=password] {
+  width: 280px;
+  padding-left: 32px;
+  outline: none;
+  border: solid 1px #ccc;
+  line-height: 40px;
+}
+
+.flip-modal input[type=submit] {
+  background: #fff;
+  padding: 4px 8px;
+  outline: none;
+  border: solid 1px #ccc;
+  cursor: pointer;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+}
