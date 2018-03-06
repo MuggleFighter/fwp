@@ -1,0 +1,88 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: #333;
+}
+
+li {
+	list-style: none;
+}
+
+body {
+	font: 13px/24px -apple-system,'SF UI Text',Arial,'PingFang SC','Hiragino Sans GB','Microsoft YaHei','WenQuanYi Micro Hei',sans-serif;
+	color: #333;
+}
+
+input {
+	border: none;
+	outline: none;
+	background: #ccc;
+}
+
+button {
+	border:none;
+	outline: none;
+	background: transparent;
+	cursor: pointer;
+}
+
+.clearfix:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+h3,h4 {
+	font-weight: normal;
+}
+
+.iconfont  {
+	vertical-align: middle;
+}
+
+
+.counter {
+	min-width: 28px;
+  padding: 4px;
+  background: #ea6f5a;
+  border-radius: 8px;
+  line-height: 1;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.sub-menu{
+	position: absolute;
+	top:100%;
+	display: none;
+	width: 200px;
+	padding: 4px 0;
+	background: #fff;
+	box-shadow: 1px 1px 6px rgba(0,0,0,0.4);
+	font-size: 14px;
+}
+
+.sub-menu a {
+	display: block;
+	padding: 0 20px;
+	line-height: 52px;
+}
+
+.sub-menu a:hover {
+	background: #eee;
+}
+
+.sub-menu .iconfont {
+	position: relative;
+  margin-right: 16px;
+  color: #ea6f5a;
+  font-size: 20px;
+  top: -2px;
+}
